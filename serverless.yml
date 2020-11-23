@@ -23,6 +23,6 @@ custom:
   customDomain:
     domainName: api.rssgen.com
     createRoute53Record: false
-    autoDomain: true
+    autoDomain: false
     endpointType: 'regional'
     stage: ${self:provider.stage}
