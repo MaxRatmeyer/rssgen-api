@@ -18,6 +18,10 @@ functions:
 
 plugins:
   - serverless-domain-manager
+  - serverless-plugin-optimize
+
+package:
+  individually: true
 
 custom:
   customDomain:
