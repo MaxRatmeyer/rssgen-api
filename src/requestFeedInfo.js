@@ -8,7 +8,17 @@ const appHeaders = {
 
 module.exports.main = async event => {
   // No parameters sent or the parameter URL does not exist
-  if (event.queryStringParameters === null || event.queryStringParameters.url === undefined) {
+  if (event.queryStringParameters === null || event.queryStringParameters === undefined) {
+    return {
+      statusCode: 404,
+      headers: appHeaders,
+      body: JSON.stringify({
+        message: "Parameter 'url' does not exist."
+      })
+    };
+  }
+
+  if (event.queryStringParameters.url === undefined) {
     return {
       statusCode: 404,
       headers: appHeaders,
