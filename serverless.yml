@@ -1,0 +1,27 @@
+service: rssgen-api
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  memorySize: 512
+  stage: prod
+  region: us-east-1
+  endpointType: REGIONAL
+
+functions:
+  requestFeedInfo:
+    handler: src/requestFeedInfo.main
+    events:
+      - http:
+          path: requestFeedInfo
+          method: GET
+
+plugins:
+  - serverless-domain-manager
+
+custom:
+  customDomain:
+    domainName: api.rssgen.com
+    createRoute53Record: false
+    autoDomain: true
+    stage: ${self:provider.stage}

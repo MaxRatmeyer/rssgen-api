@@ -1,0 +1,17 @@
+{
+  "name": "rssgen-api",
+  "version": "1.0.0",
+  "description": "Backend API for RSSGen.com",
+  "main": "index.js",
+  "author": "MaxRatmeyer",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "serverless-domain-manager": "^5.1.0",
+    "xmldom": "^0.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaxRatmeyer/rssgen-backend"
+  }
+}
