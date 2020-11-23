@@ -7,8 +7,10 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.20.0",
-    "serverless-domain-manager": "^5.1.0",
     "xmldom": "^0.3.0"
+  },
+  "devDependencies": {
+    "serverless-domain-manager": "^5.1.0"
   },
   "repository": {
     "type": "git",
