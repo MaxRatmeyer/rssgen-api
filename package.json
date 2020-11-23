@@ -10,8 +10,7 @@
     "xmldom": "^0.3.0"
   },
   "devDependencies": {
-    "serverless-domain-manager": "^5.1.0",
-    "serverless-plugin-optimize": "^4.1.4-rc.1"
+    "serverless-domain-manager": "^5.1.0"
   },
   "repository": {
     "type": "git",
